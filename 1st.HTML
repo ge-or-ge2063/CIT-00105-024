@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SheCodes - Exercise</title>
+  <style>
+    /* page overall */
+    :root{
+      --left-margin: 80px;
+      --max-width: 1100px;
+      --accent-hr-color: #222;
+      --muted-hr-color: #cfcfcf;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      background:#ffffff;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color:#111;
+    }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 40px 0; /* give vertical breathing room */
+      padding-left: var(--left-margin);
+    }
+
+    /* top small heading + underlined instruction line */
+    .top-meta {
+      margin-top: 8px;
+      margin-bottom: 36px;
+    }
+    .top-meta h4 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .top-meta p {
+      margin: 10px 0 0 0;
+      font-size: 16px;
+      display: inline-block;
+      padding-bottom: 8px;
+      border-bottom: 3px solid var(--accent-hr-color); /* thick underline like in image */
+      width: 78%;
+      box-sizing: border-box;
+    }
+
+    /* big SheCodes title */
+    .brand {
+      margin: 44px 0 30px 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 96px; /* large bold serif */
+      line-height: 0.95;
+      color: #000;
+      letter-spacing: -1px;
+    }
+
+    /* bulleted list */
+    .nav-list {
+      margin-top: 16px;
+      margin-left: 18px; /* list indent */
+    }
+    .nav-list ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+    .nav-list li {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 30px; /* large list text like in the picture */
+      margin: 18px 0;
+    }
+
+    /* bottom thin line */
+    .bottom-hr {
+      margin-top: 60px;
+      height: 2px;
+      background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.18), rgba(0,0,0,0.1));
+      border: none;
+      width: calc(100% - var(--left-margin));
+    }
+
+    /* small responsive tweak for narrow screens */
+    @media (max-width:600px){
+      :root { --left-margin: 20px; }
+      .brand { font-size: 56px; }
+      .nav-list li { font-size: 20px; }
+      .top-meta p { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+    <div class="brand">SheCodes</div>
+
+    <div class="nav-list">
+      <ul>
+        <li>Codes</li>
+        <li>Course</li>
+        <li>Stories</li>
+      </ul>
+    </div>
+
+    <hr class="bottom-hr" />
+  </div>
+</body>
+</html>
