@@ -1,0 +1,180 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff4081;
+    }
+
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .sale {
+      margin-top: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: #222;
+      color: white;
+    }
+
+    footer {
+      margin-top: 40px;
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Fashion Store</h1>
+    <p>Your one-stop shop for the latest trends</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Kids</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Our Latest Collection</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x250.png?text=Men+Jacket" alt="Jacket">
+        <h3>Men’s Jacket</h3>
+        <p>Stylish winter jacket - $50</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x250.png?text=Women+Dress" alt="Dress">
+        <h3>Women’s Dress</h3>
+        <p>Elegant evening dress - $70</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x250.png?text=Kids+Shoes" alt="Shoes">
+        <h3>Kids’ Shoes</h3>
+        <p>Comfortable sneakers - $30</p>
+      </div>
+    </div>
+
+    <div class="sale">
+      <h2>Upcoming Sale Offers</h2>
+      <table>
+        <tr>
+          <th>Sale Event</th>
+          <th>Date</th>
+          <th>Discount</th>
+        </tr>
+        <tr>
+          <td>Black Friday</td>
+          <td>25 Nov 2025</td>
+          <td>Up to 50% off</td>
+        </tr>
+        <tr>
+          <td>Christmas Sale</td>
+          <td>20 Dec 2025</td>
+          <td>Buy 1 Get 1 Free</td>
+        </tr>
+        <tr>
+          <td>New Year Sale</td>
+          <td>1 Jan 2026</td>
+          <td>30% off storewide</td>
+        </tr>
+      </table>
+      <p>💡 Shopping at Fashion Store means getting the latest styles at unbeatable prices, fast delivery, and guaranteed quality!</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Fashion Store. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
